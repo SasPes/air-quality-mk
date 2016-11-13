@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kвалитет на воздух во Македонија</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script type="text/javascript" src="air-quality-mk.js" charset="windows-1251"></script>
+    </head>
+    <body style="text-align: center; color: #333f4f;">
+
+        <img style="position: fixed; top: 10px; left: 10px;" src="air-quality-mk.png" width="42" height="42" alt="air-quality-mk"/> 
+        <span>Kвалитет на воздух во Македонија</span>
+        <br/><br/>
+<!--        <div id="station"></div>-->
+        <div id="stations" onChange="onChangeStation()"></div>
+        <br/>
+        <div id="CO">NA</div>
+        <div id="NO2">NA</div>
+        <div id="O3">NA</div>
+        <div id="PM25">NA</div>
+        <div id="PM10">NA</div>
+        <div id="SO2">NA</div>
+
+        <p style="font-size:10px; font-weight: normal;">
+            Oвозможено од <a href="http://airquality.moepp.gov.mk/">Air Quality MOEPP</a>
+            <br/>
+            Сите права задржани © 2016 <a href="http://www.saspes.com/">SasPes</a>
+        </p>
+    </body>
+</html>

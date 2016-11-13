@@ -17,3 +17,6 @@ __Kumanovo__
 
 __OracleJet__  
 * http://www.oracle.com/webfolder/technetwork/jet/jetCookbook.html?component=sparkChart&demo=refObject
+
+__Images__  
+* https://www.iconfinder.com/iconsets/travelling-icon-set-ii-part

@@ -1,0 +1,21 @@
+{
+	"name": "Kвалитет на воздух во Македонија",
+	"description": "Air Quality Macedonia | by SasPes",
+	"browser_action": {
+		"default_icon": "air-quality-mk.png",
+		"default_title": "Kвалитет на воздух во Македонија",
+		"default_popup": "air-quality-mk.html"
+	},
+	"icons": {
+		"16": "air-quality-mk.png",
+		"48": "air-quality-mk.png",
+		"128": "air-quality-mk.png"
+	},
+	"background": {
+		"page": "background.html"
+	},
+	"author": "SasPes",
+	"manifest_version": 2,
+	"content_security_policy": "script-src 'self' https://www.google.com http://airquality.moepp.gov.mk; object-src 'self'",
+	"version": "1.0.0"
+}

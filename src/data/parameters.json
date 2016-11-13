@@ -1,0 +1,44 @@
+{
+    "CO": {
+        "name": "Јаглерод Моноксид (CO)",
+        "unit": "mg/m&#179;",
+        "shortName": "CO",
+        "shortNameNoSubscript": "CO"
+    },
+    "NO2": {
+        "name": "Азот Диоксид (NO2)",
+        "unit": "µg/m&#179;",
+        "shortName": "NO&#8322;",
+        "shortNameNoSubscript": "NO2"
+    },
+    "O3": {
+        "name": "Озон (O3)",
+        "unit": "µg/m&#179;",
+        "shortName": "O&#8323;",
+        "shortNameNoSubscript": "O3"
+    },
+    "PM10": {
+        "name": "Суспендирани Честички (PM10)",
+        "unit": "µg/m&#179;",
+        "shortName": "PM&#8321;&#8320;",
+        "shortNameNoSubscript": "PM10"
+    },
+    "PM10D": {
+        "name": "Суспендирани Честички (PM10) Дневно",
+        "unit": "µg/m&#179;",
+        "shortName": "PM&#8321;&#8320;",
+        "shortNameNoSubscript": "PM10D"
+    },
+    "PM25": {
+        "name": "Суспендирани Честички (PM2.5)",
+        "unit": "µg/m&#179;",
+        "shortName": "PM&#8322;.&#8325;",
+        "shortNameNoSubscript": "PM2.5"
+    },
+    "SO2": {
+        "name": "Сулфур Диоксид (SO2)",
+        "unit": "µg/m&#179;",
+        "shortName": "SO&#8322;",
+        "shortNameNoSubscript": "SO2"
+    }
+}

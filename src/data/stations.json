@@ -1,0 +1,53 @@
+{
+    "Centar": {
+        "name": "Центар"
+    },
+    "Karpos": {
+        "name": "Карпош"
+    },
+    "Lisice": {
+        "name": "Лисиче"
+    },
+    "GaziBaba": {
+        "name": "Гази Баба"
+    },
+    "Rektorat": {
+        "name": "Ректорат"
+    },
+    "Miladinovci": {
+        "name": "Миладиновци"
+    },
+    "Mrsevci": {
+        "name": "Мршевци"
+    },
+    "Bitola1": {
+        "name": "Битола 1"
+    },
+    "Bitola2": {
+        "name": "Битола 2"
+    },
+    "Kicevo": {
+        "name": "Кичево"
+    },
+    "Lazaropole": {
+        "name": "Лазарополе"
+    },
+    "Tetovo": {
+        "name": "Тетово"
+    },
+    "Veles1": {
+        "name": "Велес 1"
+    },
+    "Veles2": {
+        "name": "Велес 2"
+    },
+    "Kocani": {
+        "name": "Кочани"
+    },
+    "Kavadarci": {
+        "name": "Кавадарци"
+    },
+    "Kumanovo": {
+        "name": "Куманово"
+    }
+}
