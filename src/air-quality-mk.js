@@ -33,14 +33,16 @@ function httpGetAsync(theUrl, callback, param)
 
 var callbackJson = function (res, param) {
     var jsonRes = JSON.parse(res);
+    data = [];
 
     Object.keys(jsonRes.measurements).forEach(function (prop) {
         data.push([param, prop + ":00", jsonRes.measurements[prop][station]]);
     });
 
-    for (var i = data.length - 1 ; i > 0 ; i--) {
+    for (var i = data.length - 1; i > 0; i--) {
         if (data[i][2] !== "") {
-            document.getElementById(param).innerHTML = data[i][2];
+            document.getElementById(param).innerHTML = data[i][0] + " | " + data[i][2] + " | " + data[i][1];
+            ;
             break;
         }
     }
@@ -59,10 +61,10 @@ var onChangeStation = function () {
     getData();
 };
 
-var getData = function (){
+var getData = function () {
     for (var param in params) {
         parameter = params[param];
-        document.getElementById(parameter).innerHTML = "NA";
+        document.getElementById(parameter).innerHTML = decodeURIComponent("нема информација");
         httpGetAsync(getUrlReq(), callbackJson, parameter);
     }
 };
@@ -86,6 +88,8 @@ var init = function () {
     if (typeof station === 'undefined' || station === null) {
         localStorage.setItem('station', "Centar");
         station = localStorage.getItem('station');
+    } else {
+        select.querySelector("option[value=" + station + "]").selected = true;
     }
 //    document.getElementById("station").innerHTML = station;
 
