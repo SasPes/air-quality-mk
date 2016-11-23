@@ -42,12 +42,18 @@ var callbackJson = function (res, param) {
     for (var i = data.length - 1; i > 0; i--) {
         if (data[i][2] !== "") {
             document.getElementById(param).innerHTML = data[i][0] + " | " + data[i][2] + " | " + data[i][1];
-            ;
+            if (data[i][0] === "PM10") {
+                setIconText(data[i][2]);
+            }
             break;
         }
     }
 
 //    console.log(data[data.length - 1]);
+};
+
+var setIconText = function (text) {
+  chrome.browserAction.setBadgeText({text: Math.round(text).toString()});
 };
 
 var getUrlReq = function () {
@@ -64,7 +70,7 @@ var onChangeStation = function () {
 var getData = function () {
     for (var param in params) {
         parameter = params[param];
-        document.getElementById(parameter).innerHTML = decodeURIComponent("нема информација");
+        document.getElementById(parameter).innerHTML = "\u043D\u0435\u043C\u0430 \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u0458\u0430";
         httpGetAsync(getUrlReq(), callbackJson, parameter);
     }
 };
@@ -93,6 +99,9 @@ var init = function () {
     }
 //    document.getElementById("station").innerHTML = station;
 
+    // select addEventListener
+    select.addEventListener("change",onChangeStation);
+    
     // data get
     getData();
 };
