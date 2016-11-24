@@ -53,7 +53,20 @@ var callbackJson = function (res, param) {
 };
 
 var setIconText = function (text) {
-  chrome.browserAction.setBadgeText({text: Math.round(text).toString()});
+    var num = Math.round(text);
+    chrome.browserAction.setBadgeText({text: num.toString()});
+
+    if (num < 50) {
+        chrome.browserAction.setBadgeBackgroundColor({"color": [0, 128, 0, 255]}); // zelena
+    } else if (50 <= num && num < 100) {
+        chrome.browserAction.setBadgeBackgroundColor({"color": [254, 203, 24, 255]}); // zolta
+    } else if (100 <= num && num < 150) {
+        chrome.browserAction.setBadgeBackgroundColor({"color": [255, 140, 0, 255]}); // portokalova
+    } else if (150 <= num && num < 200) {
+        chrome.browserAction.setBadgeBackgroundColor({"color": [255, 0, 0, 255]}); // crvena
+    } else if (200 <= num) {
+        chrome.browserAction.setBadgeBackgroundColor({"color": [128,0,0, 255]}); // temno crvena
+    }
 };
 
 var getUrlReq = function () {
@@ -100,8 +113,8 @@ var init = function () {
 //    document.getElementById("station").innerHTML = station;
 
     // select addEventListener
-    select.addEventListener("change",onChangeStation);
-    
+    select.addEventListener("change", onChangeStation);
+
     // data get
     getData();
 };
