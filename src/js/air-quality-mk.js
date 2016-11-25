@@ -7,7 +7,7 @@ var currentDate = new Date();
 currentDate = currentDate.getFullYear() + "-" + (currentDate.getMonth() + 1) + "-" + currentDate.getDate();
 
 var urlMoepp = "http://airquality.moepp.gov.mk/graphs/site/pages/";
-var urlParams = urlMoepp + "Metadata.class.php?ajax=1&parametersForStation=" + station;
+var urlParams = urlMoepp + "Metadata.class.php/?ajax=1&parametersForStation=" + station;
 
 var params = ["CO", "NO2", "O3", "PM25", "PM10", "SO2"];
 var data = [];
