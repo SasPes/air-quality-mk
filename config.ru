@@ -1,3 +1,11 @@
+require 'rack/cors' 
+use Rack::Cors do 
+    allow do 
+        origins '*' 
+        resource '*', :headers => :any, :methods => :get, expose: :location
+    end 
+end
+
 use Rack::Static,
   :urls => ["/data", "/img", "/js"],
   :root => "src"
