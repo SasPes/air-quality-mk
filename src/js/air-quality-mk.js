@@ -65,7 +65,7 @@ var setIconText = function (text) {
     } else if (150 <= num && num < 200) {
         chrome.browserAction.setBadgeBackgroundColor({"color": [255, 0, 0, 255]}); // crvena
     } else if (200 <= num) {
-        chrome.browserAction.setBadgeBackgroundColor({"color": [128,0,0, 255]}); // temno crvena
+        chrome.browserAction.setBadgeBackgroundColor({"color": [128, 0, 0, 255]}); // temno crvena
     }
 };
 
