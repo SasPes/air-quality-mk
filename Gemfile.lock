@@ -1,0 +1,14 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rack (2.0.1)
+
+PLATFORMS
+  x64-mingw32
+
+DEPENDENCIES
+  bundler (~> 1.13, >= 1.13.6)
+  rack
+
+BUNDLED WITH
+   1.13.6
