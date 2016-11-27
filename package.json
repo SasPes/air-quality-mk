@@ -1,0 +1,26 @@
+{
+  "name": "air-quality-mk",
+  "version": "1.0.0",
+  "description": "Air Quality Macedonia | by SasPes",
+  "engines": {
+    "node": "5.9.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ejs": "2.4.1",
+    "express": "4.13.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SasPes/air-quality-mk"
+  },
+  "keywords": [
+    "qir", 
+    "quality", 
+    "macedonia"
+  ],
+  "license": "MIT"
+}
