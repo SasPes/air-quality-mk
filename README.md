@@ -2,7 +2,7 @@
 
 ## Demo
 
-[http://air-quality-mk.herokuapp.com](http://air-quality-mk.herokuapp.com)
+[http://air-quality-mk.herokuapp.com](http://air-quality-mk.herokuapp.com){:target="_blank"}
 
 ## Resources
 
