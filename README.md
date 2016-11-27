@@ -2,7 +2,7 @@
 
 ## Demo
 
-<a href="http://air-quality-mk.herokuapp.com" target="_blank">http://air-quality-mk.herokuapp.com</a>
+[http://air-quality-mk.herokuapp.com](http://air-quality-mk.herokuapp.com)
 
 ## Resources
 
