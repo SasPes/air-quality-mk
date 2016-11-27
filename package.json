@@ -12,7 +12,7 @@
   "dependencies": {
     "ejs": "2.4.1",
     "express": "4.13.3",
-    "request": "3.8.5"
+    "request": "2.79.0"
   },
   "repository": {
     "type": "git",
