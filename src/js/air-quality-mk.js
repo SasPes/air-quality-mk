@@ -47,8 +47,9 @@ var callbackJson = function (res, param) {
 
     for (var i = data.length - 1; i > 0; i--) {
         if (data[i][2] !== "") {
-            document.getElementById(param).innerHTML = data[i][0] + ": " + data[i][2] + " " + parameters[data[i][0]].unit +
-                    " <img src='img/info.png' width='12' height='12' alt='info' title='" + convertDate(data[i][1]) +"'/>";
+            document.getElementById(param).innerHTML = data[i][0] + ": <b>" + data[i][2] + "</b> " + parameters[data[i][0]].unit +
+                    " <img src='img/info.png' width='12' height='12' alt='info' title='" + convertDate(data[i][1]) + "'/>" +
+                    " <b><font size='2' color='green'> < " + parameters[data[i][0]].good + " </font></b> ";
             if (data[i][0] === "PM10") {
                 setIconText(data[i][2]);
             }
@@ -59,7 +60,7 @@ var callbackJson = function (res, param) {
 //    console.log(data[data.length - 1]);
 };
 
-var convertDate = function (date){
+var convertDate = function (date) {
     var updateDate = date.split(" ");
     return updateDate[0].substring(6, 8) + "." + updateDate[0].substring(4, 6) + "." + updateDate[0].substring(0, 4) + " " + updateDate[1];
 };
