@@ -1,6 +1,7 @@
 // http://airquality.moepp.gov.mk/graphs/site/pages/MakeGraph.php?graph=StationLineGraph&station=Kumanovo&parameter=PM10&endDate=2016-11-11&timeMode=Day
 
 var stations = [];
+var parameters = [];
 var station = "";
 var parameter = "";
 var currentDate = new Date();
@@ -46,7 +47,8 @@ var callbackJson = function (res, param) {
 
     for (var i = data.length - 1; i > 0; i--) {
         if (data[i][2] !== "") {
-            document.getElementById(param).innerHTML = data[i][0] + " | " + data[i][2] + " | " + data[i][1];
+            document.getElementById(param).innerHTML = data[i][0] + ": " + data[i][2] + " " + parameters[data[i][0]].unit +
+                    " <img src='img/info.png' width='12' height='12' alt='info' title='" + convertDate(data[i][1]) +"'/>";
             if (data[i][0] === "PM10") {
                 setIconText(data[i][2]);
             }
@@ -55,6 +57,11 @@ var callbackJson = function (res, param) {
     }
 
 //    console.log(data[data.length - 1]);
+};
+
+var convertDate = function (date){
+    var updateDate = date.split(" ");
+    return updateDate[0].substring(6, 8) + "." + updateDate[0].substring(4, 6) + "." + updateDate[0].substring(0, 4) + " " + updateDate[1];
 };
 
 var setIconText = function (text) {
@@ -96,6 +103,9 @@ var getData = function () {
 var init = function () {
     stations = httpGet("data/stations.json");
     stations = JSON.parse(stations);
+
+    parameters = httpGet("data/parameters.json");
+    parameters = JSON.parse(parameters);
 
     // stations prepare
     var div = document.getElementById("stations"),

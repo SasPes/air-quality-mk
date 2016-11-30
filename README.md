@@ -23,4 +23,5 @@ __OracleJet__
 * http://www.oracle.com/webfolder/technetwork/jet/jetCookbook.html?component=sparkChart&demo=refObject
 
 __Images__  
-* https://www.iconfinder.com/iconsets/travelling-icon-set-ii-part
+* https://www.iconfinder.com/iconsets/travelling-icon-set-ii-part  
+* https://www.iconfinder.com/iconsets/e-commerce-icon-set  
