@@ -9,6 +9,8 @@
 http://airquality.moepp.gov.mk/  
 http://airquality.moepp.gov.mk/?page_id=2  
 https://en.wikipedia.org/wiki/Air_quality_index  
+https://www.iconfinder.com/iconsets/elements-icons  
+https://www.iconfinder.com/iconsets/halloween-symbols  
 
 __Kumanovo__  
 * [Param] http://airquality.moepp.gov.mk/graphs/site/pages/Metadata.class.php?ajax=1&parametersForStation=Kumanovo&_=1478862123923  

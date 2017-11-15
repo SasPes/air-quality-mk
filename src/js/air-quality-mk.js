@@ -71,14 +71,19 @@ var setIconText = function (text) {
 
     if (num < 50) {
         chrome.browserAction.setBadgeBackgroundColor({"color": [0, 128, 0, 255]}); // zelena
+        document.body.style.backgroundImage = "url('img/zelena.png')";
     } else if (50 <= num && num < 100) {
         chrome.browserAction.setBadgeBackgroundColor({"color": [254, 203, 24, 255]}); // zolta
+        document.body.style.backgroundImage = "url('img/zolta.png')";
     } else if (100 <= num && num < 150) {
         chrome.browserAction.setBadgeBackgroundColor({"color": [255, 140, 0, 255]}); // portokalova
+        document.body.style.backgroundImage = "url('img/portokalova.png')";
     } else if (150 <= num && num < 200) {
         chrome.browserAction.setBadgeBackgroundColor({"color": [255, 0, 0, 255]}); // crvena
+        document.body.style.backgroundImage = "url('img/crvena.png')";
     } else if (200 <= num) {
         chrome.browserAction.setBadgeBackgroundColor({"color": [128, 0, 0, 255]}); // temno crvena
+        document.body.style.backgroundImage = "url('img/temno-crvena.png')";
     }
 };
 
