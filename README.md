@@ -4,6 +4,8 @@
 
 [http://air-quality-mk.herokuapp.com](http://air-quality-mk.herokuapp.com)
 
+![ss](imgs/ss.png)  
+
 ## Resources
 
 http://airquality.moepp.gov.mk/  
